@@ -1,6 +1,6 @@
 import dash
 
-app = dash.Dash(__name__)
+app = dash.Dash('my app')
 
 server = app.server
 
@@ -208,4 +208,4 @@ def update_graph2(borough, species):
     }
 
 if __name__ == '__main__':
-    app.run_server(debug = True,host = '127.0.0.1')
+    app.run_server(debug = True)
